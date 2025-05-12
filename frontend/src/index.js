@@ -2,9 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Signup from './Functions/Signup';
+import Signup from './Components/Signup';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
+import Profile from "./Components/Profile";
+import HeaderFigures from "./Components/HeaderFigures";
+import Login from "./Components/LoginMenu";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,7 +16,8 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/signup" element={<Signup />} />
-
+        <Route path="/profile" element={<Profile />}  />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

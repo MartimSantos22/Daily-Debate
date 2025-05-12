@@ -4,29 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab2646e1-7a73-43a0-a07d-1b86a082df79" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/BigNews.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/HeaderFigures.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/News.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Signup_menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Images/DailyDebateLong.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Images/DailyDebateSquare.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/style.css" afterDir="false" />
+    <list default="true" id="ab2646e1-7a73-43a0-a07d-1b86a082df79" name="Changes" comment="Alterações na imagem">
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/LoginMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Signup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/UserProfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/ImagesStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DjangoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/News/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/News/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/News/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/News/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/User/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/User/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/User/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Components/AuthForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/BigNews.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/BigNews.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Components/MainContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/MainContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Functions/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Functions/Signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/noticias_imagens/Captura_de_ecrã_2023-12-21_182429.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/HeaderFigures.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/HeaderFigures.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Functions/Signup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +43,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MartimSantos22&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MartimSantos22/Daily-Debate.git&quot;,
+    &quot;accountId&quot;: &quot;5184874d-9c28-4478-9d07-ac8e79a809b0&quot;
+  }
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -67,7 +78,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/PycharmProjects/PythonProject&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Downloads/GetYourPadel2/GetYourPadel2&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -79,6 +90,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\DjangoProject\frontend\src\Components" />
       <recent name="C:\Users\User\PycharmProjects\DjangoProject\frontend\src" />
       <recent name="C:\Users\User\PycharmProjects\DjangoProject\frontend" />
       <recent name="C:\Users\User\PycharmProjects\DjangoProject\frontend\src\Images" />
@@ -167,12 +179,38 @@
       <workItem from="1746824734497" duration="3604000" />
       <workItem from="1746832218667" duration="1151000" />
       <workItem from="1747003016745" duration="7350000" />
-      <workItem from="1747057610928" duration="1364000" />
+      <workItem from="1747057610928" duration="2576000" />
+      <workItem from="1747060296459" duration="17199000" />
+      <workItem from="1747090006944" duration="957000" />
     </task>
+    <task id="LOCAL-00001" summary="Alterações na imagem">
+      <option name="closed" value="true" />
+      <created>1747059224876</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747059224876</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Alterações na imagem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alterações na imagem" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DailyDebate$manage.coverage" NAME="manage Coverage Results" MODIFIED="1746610638471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

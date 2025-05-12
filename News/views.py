@@ -17,10 +17,10 @@ class CreateNoticiaAPIView(APIView):
 # Listar todas as notícias
 class ListNoticiasAPIView(APIView):
     def get(self, request):
-        noticias = Noticia.objects.all()
-        serializer = NoticiaSerializer(noticias, many=True, context={'request': request, 'noticias': noticias})
-        context = {'request': request, 'noticias': noticias}
-        return Response(context)
+        noticias = Noticia.objects.exclude(imagem='').order_by('-data_publicacao')
+        serializer = NoticiaSerializer(noticias, many=True, context={'request': request})
+        return Response(serializer.data)
+
 
 
 # Editar uma notícia

@@ -2,7 +2,8 @@
 import React from 'react';
 import MainContent from './Components/MainContent';
 import Header from "./Components/Header";
-import Footer from "./Components/Footer"; // ajuste o caminho conforme necessário
+import Footer from "./Components/Footer";
+
 
 function App() {
   return (

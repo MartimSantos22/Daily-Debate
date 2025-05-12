@@ -26,10 +26,10 @@ from frontend.views import ReactAppView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', ReactAppView.as_view(), name='home'),  # página inicial React
+    path('', ReactAppView.as_view(), name='home'),
     path('api/', include('User.urls')),
+    path('api/', include('News.urls')),
     path('signup/', views.signup, name='signup'),
-
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

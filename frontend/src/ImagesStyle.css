@@ -1,0 +1,19 @@
+.Imagem-Destaque {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: inline-block;
+}
+
+.TituloBigNews {
+  font-size: 1rem;
+  color: White;
+  text-align: center; /* Centraliza apenas o texto dentro do próprio parágrafo */
+}
+
+.BigNewsContainer{
+  margin-bottom: 50px;
+  margin-left: -600px;
+  margin-top: 50px;
+  text-align: center;
+}

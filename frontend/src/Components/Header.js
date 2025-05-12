@@ -4,7 +4,7 @@ import HeaderFigures from "./HeaderFigures";
 
 function Header() {
   return (
-    <header >
+    <header>
       <HeaderFigures />
     </header>
   );

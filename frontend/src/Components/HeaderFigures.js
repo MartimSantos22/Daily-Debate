@@ -2,6 +2,8 @@ import React from 'react';
 import DailyDebateSquare from '../Images/DailyDebateSquare.png';
 import '../style.css';
 import { Menu, User } from 'lucide-react';
+import { Link } from "react-router-dom";
+
 
 function HeaderFigures() {
   return (
@@ -19,7 +21,11 @@ function HeaderFigures() {
   </div>
 
   <div className="header-actions">
+
+    <Link to="/Profile" className="UserLogo">
     <User size={37} />
+  </Link>
+
     <button className="live-button">Direto</button>
   </div>
 </header>
