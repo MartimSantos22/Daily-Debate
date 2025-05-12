@@ -3,7 +3,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer style={{ background: "#282c34", padding: "10px", color: "white", textAlign: "center" }}>
+    <footer style={{ background: "#282c34", padding: "10px", color: "black", textAlign: "center" }}>
       <p>&copy; 2025 - Todos os direitos reservados</p>
     </footer>
   );

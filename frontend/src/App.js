@@ -1,26 +1,19 @@
 // App.js
+import React from 'react';
+import MainContent from './Components/MainContent';
 import Header from "./Components/Header";
-import Footer from "./Components/Footer";
-import AuthForm from "./Components/AuthForm";
-import Signup from "./Functions/Signup"; // Certifique-se de que o caminho está correto
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footer from "./Components/Footer"; // ajuste o caminho conforme necessário
 
 function App() {
   return (
-    <Router>
-      <div className="App" style={{ fontFamily: "Arial, sans-serif" }}>
-        <Header />
-        <main style={{ padding: "20px", maxWidth: "600px", margin: "0 auto" }}>
+    <div className="App">
 
-          <Routes>
-            <Route path="/" element={<AuthForm />} />
-            <Route path="/signup" element={<Signup />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+      <Header />
+      <MainContent />
+      <Footer />
+
+
+    </div>
   );
 }
 

@@ -20,7 +20,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from News import views
+from News.views import ListNoticiasAPIView
 from User import views
 from frontend.views import ReactAppView
 

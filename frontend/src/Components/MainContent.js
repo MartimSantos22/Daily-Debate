@@ -1,12 +1,13 @@
-import Signup from "../Functions/Signup";
+import React from "react";
+import BigNews from "./BigNews";
 
 
-function mainContent() {
-  return (
-    <main>
+function MainContent() {
+return (
+<BigNews />
 
-    </main>
-  );
+);
+
 }
 
-export default mainContent;
+export default MainContent;
