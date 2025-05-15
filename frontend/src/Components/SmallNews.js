@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { handleNewsClick } from './Stats'; // ajusta o caminho conforme necessário
+import { useHandleNewsClick } from './Stats';
 import '../ImagesStyle.css';
 
 function SmallNews() {
   const [noticias, setNoticias] = useState([]);
+  const handleNewsClick = useHandleNewsClick(); // chama o hook aqui
 
   useEffect(() => {
     axios.get('http://localhost:8000/api/noticias/')
@@ -25,7 +26,7 @@ function SmallNews() {
             <div
               key={noticia.id || index}
               className="noticia-item"
-              onClick={() => handleNewsClick(noticia)}
+              onClick={() => handleNewsClick(noticia)} // usa a função aqui
               style={{ cursor: 'pointer' }}
             >
               <img

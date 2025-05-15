@@ -4,13 +4,13 @@ import axios from 'axios';
 import "../ImagesStyle.css";
 
 function Content() {
-  const { id } = useParams(); // obtém o ID da URL
+  const { id } = useParams();
   const [noticia, setNoticia] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:8000/api/noticias/${id}/`) // busca por ID
+    axios.get(`http://localhost:8000/api/noticias/${id}/`)
       .then(response => {
-        setNoticia(response.data); // uma única notícia
+        setNoticia(response.data);
       })
       .catch(error => {
         console.error('Erro ao carregar a notícia:', error);

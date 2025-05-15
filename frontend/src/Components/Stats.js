@@ -1,20 +1,7 @@
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
-// Função reutilizável
-export function handleNewsClick(noticia, navigate = true) {
-  axios.post(`http://localhost:8000/api/noticias/${noticia.id}/add_view/`)
-    .then(() => {
-      if (navigate) {
-        const slug = slugify(noticia.titulo);
-        window.location.href = `/${noticia.id}/${slug}`;
-      }
-    })
-    .catch(error => {
-      console.error('Erro ao adicionar visualização:', error);
-    });
-}
 
-// Slugify utilitário
 export function slugify(text) {
   return text
     .toLowerCase()
@@ -26,4 +13,17 @@ export function slugify(text) {
 }
 
 
+export function useHandleNewsClick() {
+  const navigate = useNavigate();
 
+  return function handleNewsClick(noticia) {
+    axios.post(`http://localhost:8000/api/noticias/${noticia.id}/add_view/`)
+      .then(() => {
+        const slug = slugify(noticia.titulo);
+        navigate(`/noticias/${noticia.id}/`);
+      })
+      .catch(error => {
+        console.error('Erro ao adicionar visualização:', error);
+      });
+  };
+}

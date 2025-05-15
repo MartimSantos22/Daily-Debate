@@ -48,3 +48,10 @@ class DeleteNoticiaAPIView(APIView):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 
+class DetailNoticiaAPIView(APIView):
+    def get(self, request, pk):
+        noticia = get_object_or_404(Noticia, pk=pk)
+        serializer = NoticiaSerializer(noticia, context={'request': request})
+        return Response(serializer.data)
+
+

@@ -11,6 +11,7 @@ import Login from "./Components/LoginMenu";
 import Content from "./Components/Content";
 import News from "./Components/News";
 import NewsContent from "./Components/NewsContent";
+import { slugify } from "./Components/Stats";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,7 +22,7 @@ root.render(
                 <Route path="/signup" element={<Signup/>}/>
                 <Route path="/profile" element={<Profile/>}/>
                 <Route path="/login" element={<Login/>}/>
-                <Route path="/:id/:slug" element={<NewsContent />} />
+                <Route path="/noticias/:id/" element={<NewsContent />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>
