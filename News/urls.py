@@ -4,6 +4,7 @@ from .views import (
     ListNoticiasAPIView,
     EditNoticiaAPIView,
     DeleteNoticiaAPIView,
+    IncrementViewsAPIView,
 )
 
 urlpatterns = [
@@ -11,4 +12,5 @@ urlpatterns = [
     path('noticias/create/', CreateNoticiaAPIView.as_view(), name='criar_noticia'),
     path('noticias/<int:pk>/edit/', EditNoticiaAPIView.as_view(), name='editar_noticia'),
     path('noticias/<int:pk>/delete/', DeleteNoticiaAPIView.as_view(), name='apagar_noticia'),
+    path('noticias/<int:pk>/add_view/', IncrementViewsAPIView.as_view(), name='adicionar_view'),
 ]

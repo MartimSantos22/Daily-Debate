@@ -1,3 +1,4 @@
+/* Estilo para a imagem de destaque */
 .Imagem-Destaque {
   width: 100%;
   max-width: 700px;
@@ -5,15 +6,156 @@
   display: inline-block;
 }
 
+
+
 .TituloBigNews {
   font-size: 1rem;
   color: White;
-  text-align: center; /* Centraliza apenas o texto dentro do próprio parágrafo */
-}
-
-.BigNewsContainer{
-  margin-bottom: 50px;
-  margin-left: -600px;
-  margin-top: 50px;
   text-align: center;
 }
+
+.BigNewsContainer {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  text-align: center;
+  display: inline-block;
+  width: 45%;
+}
+
+.Imagem-Pequena {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.noticias-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Se ajusta responsivamente */
+  gap: 20px;
+  padding: 20px;
+
+  box-sizing: border-box;
+  width: 50%;
+}
+.NoticiasWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  flex-wrap: wrap; /* Para ajustar em telas menores */
+  gap: 20px;
+}
+
+
+.TituloSmallNews {
+  font-size: 1rem;
+  color: White;
+  text-align: center;
+}
+
+
+
+.ContainerImagemTitulo {
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
+.FaixaAzulContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: #075aac;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+.MostViewedNewsContainer {
+  text-align: center;
+  cursor: pointer;
+  flex: 1;
+}
+
+.ContainerImagemTitulo {
+  cursor: pointer;
+}
+
+.TituloMaisVista{
+    color: #ff0000;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.Imagem-MostViewed {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.TituloMostViewed {
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.OutrasNoticiasContainer {
+  flex: 1;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;800&display=swap');
+
+.MaisVistasBoxTitle {
+  color: #ff0000;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+
+/* Nova lista estilizada */
+.ListaOutrasNoticias {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ItemNoticia {
+  margin-top: 30px;
+  background-color: #ffffff;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 2px solid #0035aa;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-weight: 500;
+  color: #333;
+}
+
+.ItemNoticia:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #1576c8;
+}
+
+

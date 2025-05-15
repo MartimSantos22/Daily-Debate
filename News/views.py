@@ -21,6 +21,13 @@ class ListNoticiasAPIView(APIView):
         serializer = NoticiaSerializer(noticias, many=True, context={'request': request})
         return Response(serializer.data)
 
+class IncrementViewsAPIView(APIView):
+    def post(self, request, pk):
+         noticia = get_object_or_404(Noticia, pk=pk)
+         noticia.views += 1
+         noticia.save()
+         return Response({'status': 'view incremented', 'views': noticia.views})
+
 
 
 # Editar uma notícia
@@ -39,3 +46,5 @@ class DeleteNoticiaAPIView(APIView):
         noticia = get_object_or_404(Noticia, pk=pk)
         noticia.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+

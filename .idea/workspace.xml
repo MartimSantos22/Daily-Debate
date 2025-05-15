@@ -4,26 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab2646e1-7a73-43a0-a07d-1b86a082df79" name="Changes" comment="Alterações na imagem">
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/LoginMenu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Signup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/UserProfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/ImagesStyle.css" afterDir="false" />
+    <list default="true" id="ab2646e1-7a73-43a0-a07d-1b86a082df79" name="Changes" comment="Versão Com Login/Logout">
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Content.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/MostViewedNews.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/NewsContent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/SmallNews.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Stats.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/News/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/News/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/News/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/News/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/News/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/News/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/News/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/News/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/User/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/User/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Components/BigNews.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/BigNews.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Components/HeaderFigures.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/HeaderFigures.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Functions/Signup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/MainContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/MainContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/ImagesStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/ImagesStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/style.css" afterDir="false" />
     </list>
@@ -181,7 +177,12 @@
       <workItem from="1747003016745" duration="7350000" />
       <workItem from="1747057610928" duration="2576000" />
       <workItem from="1747060296459" duration="17199000" />
-      <workItem from="1747090006944" duration="957000" />
+      <workItem from="1747090006944" duration="1293000" />
+      <workItem from="1747130731152" duration="4220000" />
+      <workItem from="1747232264323" duration="9013000" />
+      <workItem from="1747317748502" duration="6939000" />
+      <workItem from="1747324802045" duration="698000" />
+      <workItem from="1747325517735" duration="600000" />
     </task>
     <task id="LOCAL-00001" summary="Alterações na imagem">
       <option name="closed" value="true" />
@@ -191,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747059224876</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Alterações na imagem">
+      <option name="closed" value="true" />
+      <created>1747091007443</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747091007443</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -3,13 +3,17 @@ import BigNews from "./BigNews";
 import SmallNews from "./SmallNews";
 import '../ImagesStyle.css';
 import MostViewedNews from "./MostViewedNews";
+import Header from "./Header";
+import Content from "./Content";
+import Footer from "./Footer";
+import "../style.css";
 
 function MainContent() {
     return (
-        <div className="NoticiasWrapper">
-            <BigNews />
-            <SmallNews />
-            <MostViewedNews />
+        <div >
+            <Header />
+            <Content />
+            <Footer />
         </div>
     );
 }

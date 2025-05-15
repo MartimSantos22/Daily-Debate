@@ -8,19 +8,23 @@ import reportWebVitals from './reportWebVitals';
 import Profile from "./Components/Profile";
 import HeaderFigures from "./Components/HeaderFigures";
 import Login from "./Components/LoginMenu";
+import Content from "./Components/Content";
+import News from "./Components/News";
+import NewsContent from "./Components/NewsContent";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/profile" element={<Profile />}  />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </BrowserRouter>
-  </React.StrictMode>
+    <React.StrictMode>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<App/>}/>
+                <Route path="/signup" element={<Signup/>}/>
+                <Route path="/profile" element={<Profile/>}/>
+                <Route path="/login" element={<Login/>}/>
+                <Route path="/:id/:slug" element={<NewsContent />} />
+            </Routes>
+        </BrowserRouter>
+    </React.StrictMode>
 );
 
 reportWebVitals();

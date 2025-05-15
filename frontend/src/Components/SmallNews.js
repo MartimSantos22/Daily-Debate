@@ -1,0 +1,49 @@
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { handleNewsClick } from './Stats'; // ajusta o caminho conforme necessário
+import '../ImagesStyle.css';
+
+function SmallNews() {
+  const [noticias, setNoticias] = useState([]);
+
+  useEffect(() => {
+    axios.get('http://localhost:8000/api/noticias/')
+      .then(response => {
+        setNoticias(response.data);
+      })
+      .catch(error => {
+        console.error('Erro ao carregar as notícias:', error);
+      });
+  }, []);
+
+  return (
+    noticias.length > 1 ? (
+      <div className="noticias-grid">
+        {noticias.map((noticia, index) => {
+          if (index === 0 || index > 4) return null; // Mostra índices 1 a 4
+          return (
+            <div
+              key={noticia.id || index}
+              className="noticia-item"
+              onClick={() => handleNewsClick(noticia)}
+              style={{ cursor: 'pointer' }}
+            >
+              <img
+                className="Imagem-Pequena"
+                src={noticia.imagem || 'default-image.jpg'}
+                alt={noticia.titulo || 'Imagem sem título'}
+              />
+              <h2 className="TituloSmallNews" style={{ marginTop: '10px' }}>
+                {noticia.titulo || 'Título não disponível'}
+              </h2>
+            </div>
+          );
+        })}
+      </div>
+    ) : (
+      <p>Carregando notícias...</p>
+    )
+  );
+}
+
+export default SmallNews;

@@ -237,6 +237,30 @@ button {
 }
 
 
+.header-titles {
+  display: flex;
+  gap: 50px; /* Espaçamento entre os elementos */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Alinha verticalmente */
+  padding: 10px;
+  color: white;
+}
+
+.header-titles h2 {
+    display: inline-block;
+  color: white;
+  margin: 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 30px 50px;
+}
+
+.header-titles h2:hover {
+  color: #007BFF; /* Cor ao passar o mouse */
+}
+
+
 
 
 
