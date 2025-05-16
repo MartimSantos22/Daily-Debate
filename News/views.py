@@ -1,3 +1,4 @@
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -21,14 +22,28 @@ class ListNoticiasAPIView(APIView):
         serializer = NoticiaSerializer(noticias, many=True, context={'request': request})
         return Response(serializer.data)
 
+# Incrementar visualizações
 class IncrementViewsAPIView(APIView):
     def post(self, request, pk):
-         noticia = get_object_or_404(Noticia, pk=pk)
-         noticia.views += 1
-         noticia.save()
-         return Response({'status': 'view incremented', 'views': noticia.views})
+        noticia = get_object_or_404(Noticia, pk=pk)
+        noticia.views += 1
+        noticia.save()
+        return Response({'status': 'view incremented', 'views': noticia.views})
 
+# Incrementar Likes
+class IncrementLikesAPIView(APIView):
+    permission_classes = [IsAuthenticated]
 
+    def post(self, request, pk):
+        noticia = get_object_or_404(Noticia, pk=pk)
+
+        if request.user in noticia.liked_by.all():
+            return Response({'detail': 'Você já deu like nesta notícia.'}, status=status.HTTP_400_BAD_REQUEST)
+
+        noticia.likes += 1
+        noticia.liked_by.add(request.user)
+        noticia.save()
+        return Response({'status': 'like incremented', 'likes': noticia.likes})
 
 # Editar uma notícia
 class EditNoticiaAPIView(APIView):
@@ -47,11 +62,9 @@ class DeleteNoticiaAPIView(APIView):
         noticia.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
-
+# Detalhes de uma notícia
 class DetailNoticiaAPIView(APIView):
     def get(self, request, pk):
         noticia = get_object_or_404(Noticia, pk=pk)
         serializer = NoticiaSerializer(noticia, context={'request': request})
         return Response(serializer.data)
-
-

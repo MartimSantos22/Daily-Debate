@@ -71,6 +71,7 @@ def logout_view(request):
 def user_view(request):
     return Response({
         'username': request.user.username,
-        'email': request.user.email
+        'email': request.user.email,
+        'is_superuser': request.user.is_superuser,
     })
 

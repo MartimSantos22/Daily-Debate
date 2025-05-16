@@ -12,6 +12,7 @@ import Content from "./Components/Content";
 import News from "./Components/News";
 import NewsContent from "./Components/NewsContent";
 import { slugify } from "./Components/Stats";
+import AdminMenu from "./Components/AdminMenu";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,6 +24,7 @@ root.render(
                 <Route path="/profile" element={<Profile/>}/>
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/noticias/:id/" element={<NewsContent />} />
+                <Route path="/adminMenu/" element={<AdminMenu />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>
