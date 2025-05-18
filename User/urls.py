@@ -9,6 +9,6 @@ urlpatterns = [
     path('user/me/', views.user_view),
     path('login/', login_view, name='login'),
 
-
+    path("user/", user_view, name="user-info"),
 
 ]

@@ -8,9 +8,7 @@ function HeaderFigures() {
   return (
     <header className="header-figure">
       <div className="menu-logo">
-        <div className="menu-icon">
-          <Menu size={37} />
-        </div>
+
         <div className="logo">
           <Link to="/">
             <img src={DailyDebateSquare} alt="Festival Logo" />
@@ -19,11 +17,11 @@ function HeaderFigures() {
       </div>
 
       <div className="header-titles">
-        <a href="#"><h2>Mundo</h2></a>
-        <a href="#"><h2>Europa</h2></a>
-        <a href="#"><h2>Desporto</h2></a>
-        <a href="#"><h2>Business</h2></a>
-        <a href="#"><h2>Outras</h2></a>
+        <a href="http://localhost:3000/Mundo"><h2>Mundo</h2></a>
+        <a href="http://localhost:3000/Europa"><h2>Europa</h2></a>
+        <a href="http://localhost:3000/Desporto"><h2>Desporto</h2></a>
+        <a href="http://localhost:3000/Business"><h2>Business</h2></a>
+        <a href="http://localhost:3000/Outras"><h2>Outras</h2></a>
       </div>
 
       <div className="header-actions">

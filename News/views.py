@@ -7,13 +7,18 @@ from .serializers import NoticiaSerializer
 from django.shortcuts import get_object_or_404
 
 # Criar notícia
+from rest_framework.parsers import MultiPartParser, FormParser
+
 class CreateNoticiaAPIView(APIView):
+    parser_classes = [MultiPartParser, FormParser]  # Aceita multipart/form-data
+
     def post(self, request):
         serializer = NoticiaSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
 
 # Listar todas as notícias
 class ListNoticiasAPIView(APIView):

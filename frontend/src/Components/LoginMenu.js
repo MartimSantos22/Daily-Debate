@@ -24,7 +24,7 @@ function Login() {
       localStorage.setItem('username', response.data.username);
 
       // Redireciona para o perfil
-      navigate('/profile');
+      navigate('/');
       window.location.reload();
 
     } catch (err) {

@@ -13,6 +13,11 @@ import News from "./Components/News";
 import NewsContent from "./Components/NewsContent";
 import { slugify } from "./Components/Stats";
 import AdminMenu from "./Components/AdminMenu";
+import EuropaNews from "./Components/EuropaNews";
+import DesportoNews from "./Components/DesportoNews";
+import BusinessNews from "./Components/BusinessNews";
+import OutrosNews from "./Components/OutrosNews";
+import MundoNews from "./Components/MundoNews";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,6 +30,11 @@ root.render(
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/noticias/:id/" element={<NewsContent />} />
                 <Route path="/adminMenu/" element={<AdminMenu />} />
+                <Route path="/Europa/" element={<EuropaNews />} />
+                <Route path="/Mundo/" element={<MundoNews />} />
+                <Route path="/Desporto/" element={<DesportoNews />} />
+                <Route path="/Business/" element={<BusinessNews />} />
+                <Route path="/Outras/" element={<OutrosNews />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>
