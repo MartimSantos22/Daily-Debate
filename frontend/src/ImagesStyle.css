@@ -172,7 +172,7 @@
 
 .ContentImageContainer {
   display: flex;
-  flex-direction: column; /* empilha os elementos verticalmente */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 50px;

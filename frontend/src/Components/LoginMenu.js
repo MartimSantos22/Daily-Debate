@@ -19,11 +19,11 @@ function Login() {
         password,
       });
 
-      // Salva o token no localStorage
+
       localStorage.setItem('token', response.data.access);
       localStorage.setItem('username', response.data.username);
 
-      // Redireciona para o perfil
+
       navigate('/');
       window.location.reload();
 

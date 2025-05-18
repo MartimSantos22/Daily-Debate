@@ -1,4 +1,4 @@
-/* header-figure.css */
+
 .header-figure {
   display: flex;
   align-items: center;
@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: #082332; /* azul escuro bonito */
+  background-color: #082332;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -25,7 +25,7 @@ body {
 }
 
 
-.menu-icon { /*3 Traços */
+.menu-icon {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -65,9 +65,9 @@ body {
   border: none;
   padding: 5px 15px;
   border-radius: 20px;
-  font-size: 14px;
-  cursor: pointer;
+  font-size: 16px;
   font-weight: bold;
+  cursor: default;
 }
 
 .live-button:hover {
@@ -121,7 +121,7 @@ button {
 .ProfileButtons {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* opcional, para espaçar os botões */
+  gap: 10px;
   justify-content: center;
   align-items: center;
 }
@@ -257,9 +257,9 @@ button {
 
 .header-titles {
   display: flex;
-  gap: 50px; /* Espaçamento entre os elementos */
-  justify-content: center; /* Centraliza os itens horizontalmente */
-  align-items: center; /* Alinha verticalmente */
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
   color: white;
 }
@@ -275,7 +275,7 @@ button {
 }
 
 .header-titles h2:hover {
-  color: #007BFF; /* Cor ao passar o mouse */
+  color: #007BFF;
 }
 
 

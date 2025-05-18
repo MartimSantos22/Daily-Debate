@@ -5,7 +5,7 @@ import '../ImagesStyle.css';
 
 function SmallNews() {
   const [noticias, setNoticias] = useState([]);
-  const handleNewsClick = useHandleNewsClick(); // chama o hook aqui
+  const handleNewsClick = useHandleNewsClick();
 
   useEffect(() => {
     axios.get('http://localhost:8000/api/noticias/')
@@ -21,12 +21,12 @@ function SmallNews() {
     noticias.length > 1 ? (
       <div className="noticias-grid">
         {noticias.map((noticia, index) => {
-          if (index === 0 || index > 4) return null; // Mostra índices 1 a 4
+          if (index === 0 || index > 4) return null;
           return (
             <div
               key={noticia.id || index}
               className="noticia-item"
-              onClick={() => handleNewsClick(noticia)} // usa a função aqui
+              onClick={() => handleNewsClick(noticia)}
               style={{ cursor: 'pointer' }}
             >
               <img

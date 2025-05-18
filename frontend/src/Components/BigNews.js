@@ -5,7 +5,7 @@ import '../ImagesStyle.css';
 
 function BigNews() {
   const [noticia, setNoticia] = useState(null);
-  const handleNewsClick = useHandleNewsClick(); // usa o hook
+  const handleNewsClick = useHandleNewsClick();
 
   useEffect(() => {
     axios.get('http://localhost:8000/api/noticias/')
